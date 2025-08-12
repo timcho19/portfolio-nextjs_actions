@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'
 
 export default function Insert(){
-  const router = useRouter()
+  const router = useRouter();
   const supabase = createClient();
   const [formData, setFormData] = useState({
     title:'', 
@@ -120,7 +120,7 @@ export default function Insert(){
       console.log(error);
     }else{
       alert('로그인 성공');
-      //setUser(data.user); //로그인한 유저의 유저 정보 반영
+      setUser(data.user); //로그인한 유저의 유저 정보 반영
       router.refresh();//로그인후 새로고침
     }
   }
