@@ -7,7 +7,7 @@ header {
 }
 header:before{
     content:'';
-    height: 4px;
+    height: 3px;
     left:0;
     width:100%;
     position: absolute;
